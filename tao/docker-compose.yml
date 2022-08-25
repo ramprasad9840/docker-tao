@@ -14,6 +14,7 @@ web:
     - tao
 db:
   image: mysql:latest
+  command: --default-authentication-plugin=mysql_native_password
   ports:
     - "3306:3306"
   environment:
